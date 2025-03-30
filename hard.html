@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  margin-bottom: 205px;
+}
+.question {
+    display: none;
+}
+.question:first-child {
+    display: block;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    transition: 0.5s;
+    background-color: blue;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+#score {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question" id="question1">
+            <p>1: Who developed the Python language?</p>
+            <label><input type="radio" name="q1" value="A"> A. Zim Den</label><br>
+            <label><input type="radio" name="q1" value="B"> B. Guido van Rossum</label><br>
+            <label><input type="radio" name="q1" value="C"> C. Niene Stom</label><br>
+            <label><input type="radio" name="q1" value="D"> D. Wick van Rossum</label>
+        </div>
+        <div class="question" id="question2">
+            <p>2: In which year was the Python language developed?</p>
+            <label><input type="radio" name="q2" value="A"> A. 1995</label><br>
+            <label><input type="radio" name="q2" value="B"> B. 1972</label><br>
+            <label><input type="radio" name="q2" value="C"> C. 1981</label><br>
+            <label><input type="radio" name="q2" value="D"> D. 1989</label>
+        </div>
+        <div class="question" id="question3">
+            <p>3: Which one of the following is the correct extension of the Python file?</p>
+            <label><input type="radio" name="q3" value="A"> A. .py</label><br>
+            <label><input type="radio" name="q3" value="B"> B. .python</label><br>
+            <label><input type="radio" name="q3" value="C"> C. .p</label><br>
+            <label><input type="radio" name="q3" value="D"> D. None of these</label>
+        </div>
+        <div class="question" id="question4">
+            <p>4: What do we use to define a block of code in Python language?</p>
+            <label><input type="radio" name="q4" value="A"> A. Key</label><br>
+            <label><input type="radio" name="q4" value="B"> B. Brackets</label><br>
+            <label><input type="radio" name="q4" value="C"> C. Indentation</label><br>
+            <label><input type="radio" name="q4" value="D"> D. None of these</label>
+        </div>
+        <div class="question" id="question5">
+            <p>5: What is the method inside the class in python language?</p>
+            <label><input type="radio" name="q5" value="A"> A. Object</label><br>
+            <label><input type="radio" name="q5" value="B"> B. Function</label><br>
+            <label><input type="radio" name="q5" value="C"> C. Attribute</label><br>
+            <label><input type="radio" name="q5" value="D"> D. Argument</label>
+        </div>
+        <div class="question" id="question6">
+            <p>6: Which of the following is not a keyword in Python language?</p>
+            <label><input type="radio" name="q6" value="A"> A. val</label><br>
+            <label><input type="radio" name="q6" value="B"> B. raise</label><br>
+            <label><input type="radio" name="q6" value="C"> C. try</label><br>
+            <label><input type="radio" name="q6" value="D"> D. with</label>
+        </div>
+        <div class="question" id="question7">
+            <p>7: Which of the following functions is a built-in function in python language?</p>
+            <label><input type="radio" name="q7" value="A"> A. val()</label><br>
+            <label><input type="radio" name="q7" value="B"> B. print()</label><br>
+            <label><input type="radio" name="q7" value="C"> C. printf()</label><br>
+            <label><input type="radio" name="q7" value="D"> D. None of these
+            </label>
+        </div>
+        <div class="question" id="question8">
+            <p>8: In which year was the Python 3.0 version developed?</p>
+            <label><input type="radio" name="q8" value="A"> A. 2008</label><br>
+            <label><input type="radio" name="q8" value="B"> B. 2000</label><br>
+            <label><input type="radio" name="q8" value="C"> C. 2010</label><br>
+            <label><input type="radio" name="q8" value="D"> D. 2005</label>
+        </div>
+        <div class="question" id="question9">
+            <p>9: Which one of the following has the highest precedence in the expression?</p>
+            <label><input type="radio" name="q9" value="A"> A. Division</label><br>
+            <label><input type="radio" name="q9" value="B"> B. Subtraction</label><br>
+            <label><input type="radio" name="q9" value="C"> C. Power</label><br>
+            <label><input type="radio" name="q9" value="D"> D. Parentheses</label>
+        </div>
+        <div class="question" id="question10">
+            <p>10: What is the maximum possible length of an identifier?</p>
+            <label><input type="radio" name="q10" value="A"> A. 16</label><br>
+            <label><input type="radio" name="q10" value="B"> B. 32</label><br>
+            <label><input type="radio" name="q10" value="C"> C. 64</label><br>
+            <label><input type="radio" name="q10" value="D"> D. None of these</label>
+        </div>
+        <button id="nextButton">Next</button>
+        <button id="viewScoreButton" style="display: none;">View Score</button>
+        <div id="score" style="display: none;"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    let currentQuestion = 1;
+    const totalQuestions = 10;
+
+    const answers = {
+        q1: 'B',
+        q2: 'D',
+        q3: 'A',
+        q4: 'C',
+        q5: 'B',
+        q6: 'A',
+        q7: 'B',
+        q8: 'A',
+        q9: 'D',
+        q10: 'D'
+
+    };
+    const showQuestion = (questionNumber) => {
+        for (let i = 1; i <= totalQuestions; i++) {
+            document.getElementById(`question${i}`).style.display = 'none';
+        }
+        document.getElementById(`question${questionNumber}`).style.display = 'block';
+    };
+    document.getElementById('nextButton').addEventListener('click', () => {
+        if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+        if (currentQuestion === totalQuestions) {
+            document.getElementById('nextButton').style.display = 'none';
+            document.getElementById('viewScoreButton').style.display = 'block';
+        }
+    });
+    document.getElementById('viewScoreButton').addEventListener('click', () => {
+        let score = 0;
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === answers[`q${i}`]) {
+                score++;
+            }
+        }
+        document.getElementById('score').innerText = `Your score: ${score} out of ${totalQuestions}`;
+        document.getElementById('score').style.display = 'block';
+    });
+
+    showQuestion(currentQuestion);
+});
+    </script>
+</body>
+</html>

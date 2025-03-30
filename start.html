@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Difficulty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Welcome To Online Quiz Test...</p>
+        <h3>Select the Exam Paper</h3>
+        
+        <form id="difficultyForm">
+            <label for="difficulty">Choose level:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="Choose">Choose</option>
+                <option value="easy">General Knowledge</option>
+                <option value="hard">Python </option>
+                <option value="java">Java </option>
+            </select>
+            <button type="submit">Start Exam</button>
+        </form>
+        <p>Each question carry 1 mark...</p>
+    </div>
+    <script>
+        document.getElementById('difficultyForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const difficulty = document.getElementById('difficulty').value;
+    let paperUrl;
+
+    if (difficulty === 'easy') {
+        paperUrl = 'easy.html';
+    } else if (difficulty === 'hard') {
+        paperUrl = 'hard.html';
+    }
+    else if (difficulty === 'java') {
+        paperUrl = 'java.html';
+    }
+    if (paperUrl) {
+        window.location.href = paperUrl;
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  margin-bottom: 205px;
+}
+.question {
+    display: none;
+}
+.question:first-child {
+    display: block;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    transition: 0.5s;
+    background-color: blue;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+#score {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question" id="question1">
+            <p>1: Who invented Java Programming?</p>
+            <label><input type="radio" name="q1" value="A"> A. Guido van Rossum</label><br>
+            <label><input type="radio" name="q1" value="B"> B. James Gosling</label><br>
+            <label><input type="radio" name="q1" value="C"> C. Dennis Ritchie</label><br>
+            <label><input type="radio" name="q1" value="D"> D. Bjarne Stroustrup</label>
+        </div>
+        <div class="question" id="question2">
+            <p>2: Which component is used to compile, debug and execute the java programs?</p>
+            <label><input type="radio" name="q2" value="A"> A. JRE</label><br>
+            <label><input type="radio" name="q2" value="B"> B. JIT</label><br>
+            <label><input type="radio" name="q2" value="C"> C. JDK</label><br>
+            <label><input type="radio" name="q2" value="D"> D. JVM</label>
+        </div>
+        <div class="question" id="question3">
+            <p>3: Which one of the following is not a Java feature?</p>
+            <label><input type="radio" name="q3" value="A"> A. Object-oriented</label><br>
+            <label><input type="radio" name="q3" value="B"> B. Use of pointers</label><br>
+            <label><input type="radio" name="q3" value="C"> C. Portable</label><br>
+            <label><input type="radio" name="q3" value="D"> D. Dynamic and Extensible</label>
+        </div>
+        <div class="question" id="question4">
+            <p>4: What is the extension of java code files?</p>
+            <label><input type="radio" name="q4" value="A"> A. .js</label><br>
+            <label><input type="radio" name="q4" value="B"> B. .txt</label><br>
+            <label><input type="radio" name="q4" value="C"> C. .class</label><br>
+            <label><input type="radio" name="q4" value="D"> D. .java</label>
+        </div>
+        <div class="question" id="question5">
+            <p>5: Which of the following is not an OOPS concept in Java?</p>
+            <label><input type="radio" name="q5" value="A"> A. Polymorphism</label><br>
+            <label><input type="radio" name="q5" value="B"> B. Inheritance</label><br>
+            <label><input type="radio" name="q5" value="C"> C. Compilation</label><br>
+            <label><input type="radio" name="q5" value="D"> D. Encapsulation</label>
+        </div>
+        <div class="question" id="question6">
+            <p>6: Which of these are selection statements in Java?</p>
+            <label><input type="radio" name="q6" value="A"> A. break</label><br>
+            <label><input type="radio" name="q6" value="B"> B. continue</label><br>
+            <label><input type="radio" name="q6" value="C"> C. for()</label><br>
+            <label><input type="radio" name="q6" value="D"> D. if()</label>
+        </div>
+        <div class="question" id="question7">
+            <p>7: Which of these keywords is used to define interfaces in Java?</p>
+            <label><input type="radio" name="q7" value="A"> A. intf</label><br>
+            <label><input type="radio" name="q7" value="B"> B. Intf</label><br>
+            <label><input type="radio" name="q7" value="C"> C. interface</label><br>
+            <label><input type="radio" name="q7" value="D"> D. Interface</label>
+        </div>
+        <div class="question" id="question8">
+            <p>8: Which of the following is a superclass of every class in Java?</p>
+            <label><input type="radio" name="q8" value="A"> A. ArrayList</label><br>
+            <label><input type="radio" name="q8" value="B"> B. Abstract class</label><br>
+            <label><input type="radio" name="q8" value="C"> C. Object class</label><br>
+            <label><input type="radio" name="q8" value="D"> D. String</label>
+        </div>
+        <div class="question" id="question9">
+            <p>9: Which of these keywords are used for the block to be examined for exceptions?</p>
+            <label><input type="radio" name="q9" value="A"> A. check</label><br>
+            <label><input type="radio" name="q9" value="B"> B. throw</label><br>
+            <label><input type="radio" name="q9" value="C"> C. catch</label><br>
+            <label><input type="radio" name="q9" value="D"> D. try</label>
+        </div>
+        <div class="question" id="question10">
+            <p>10: Which one of the following is not an access modifier?</p>
+            <label><input type="radio" name="q10" value="A"> A. Protected</label><br>
+            <label><input type="radio" name="q10" value="B"> B. Void</label><br>
+            <label><input type="radio" name="q10" value="C"> C. Public</label><br>
+            <label><input type="radio" name="q10" value="D"> D. Private</label>
+        </div>
+        <button id="nextButton">Next</button>
+        <button id="viewScoreButton" style="display: none;">View Score</button>
+        <div id="score" style="display: none;"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    let currentQuestion = 1;
+    const totalQuestions = 10;
+
+    const answers = {
+        q1: 'B',
+        q2: 'C',
+        q3: 'B',
+        q4: 'D',
+        q5: 'C',
+        q6: 'D',
+        q7: 'C',
+        q8: 'C',
+        q9: 'D',
+        q10: 'B'
+
+    };
+    const showQuestion = (questionNumber) => {
+        for (let i = 1; i <= totalQuestions; i++) {
+            document.getElementById(`question${i}`).style.display = 'none';
+        }
+        document.getElementById(`question${questionNumber}`).style.display = 'block';
+    };
+    document.getElementById('nextButton').addEventListener('click', () => {
+        if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+        if (currentQuestion === totalQuestions) {
+            document.getElementById('nextButton').style.display = 'none';
+            document.getElementById('viewScoreButton').style.display = 'block';
+        }
+    });
+    document.getElementById('viewScoreButton').addEventListener('click', () => {
+        let score = 0;
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === answers[`q${i}`]) {
+                score++;
+            }
+        }
+        document.getElementById('score').innerText = `Your score: ${score} out of ${totalQuestions}`;
+        document.getElementById('score').style.display = 'block';
+    });
+
+    showQuestion(currentQuestion);
+});
+    </script>
+</body>
+</html>

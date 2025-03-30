@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <style>
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.quiz-container {
+    width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+}
+h2 {
+  text-align: center;
+}
+#question-container {
+  margin-bottom: 20px;
+}
+#question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#answer-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+button {
+  border: 2px solid black;
+  height: 40px;
+  font-size: 16px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+  transition: 1s;
+}
+#controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#timer-container {
+  display: flex;
+  align-items: center;
+}
+#timer-text {
+  font-size: 14px;
+}
+#timer {
+  font-weight: bold;
+  margin-left: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Quiz App</h2>
+    <div id="question-container">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+    </div>
+    <div id="controls-container">
+      <button id="start-button">Start Quiz</button>
+      <div id="timer-container">
+        <span id="timer-text">Time Left: <span id="timer">0</span></span>
+      </div>
+    </div>
+  </div>
+  <script src="./quiz.js"></script>
+</body>
+</html>

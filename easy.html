@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+  width: 300px;
+  margin-top: 1px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  margin-bottom: 205px;
+}
+.question {
+    display: none;
+}
+.question:first-child {
+    display: block;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    transition: 0.5s;
+    background-color: blue;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+#score {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="question" id="question1">
+            <p>1: Which of the given devices is used for counting blood cells?</p>
+            <label><input type="radio" name="q1" value="A"> A. Hmelethometer</label><br>
+            <label><input type="radio" name="q1" value="B"> B. Spyscometer</label><br>
+            <label><input type="radio" name="q1" value="C"> C. Hemocytometer</label><br>
+            <label><input type="radio" name="q1" value="D"> D. Hamosytometer</label>
+        </div>
+        <div class="question" id="question2">
+            <p>2: The driving force of an ecosystem is</p>
+            <label><input type="radio" name="q2" value="A"> A. Carbon Mono oxide</label><br>
+            <label><input type="radio" name="q2" value="B"> B. Biogas</label><br>
+            <label><input type="radio" name="q2" value="C"> C. Solar Energy</label><br>
+            <label><input type="radio" name="q2" value="D"> D. Carbon dioxide</label>
+        </div>
+        <div class="question" id="question3">
+            <p>3: What is the largest planet in our solar system?</p>
+            <label><input type="radio" name="q3" value="A"> A. Earth</label><br>
+            <label><input type="radio" name="q3" value="B"> B. Jupiter</label><br>
+            <label><input type="radio" name="q3" value="C"> C. Saturn</label><br>
+            <label><input type="radio" name="q3" value="D"> D. Mars</label>
+        </div>
+        <div class="question" id="question4">
+            <p>4: What is the boiling point of water?</p>
+            <label><input type="radio" name="q4" value="A"> A. 90°C</label><br>
+            <label><input type="radio" name="q4" value="B"> B. 100°C</label><br>
+            <label><input type="radio" name="q4" value="C"> C. 110°C</label><br>
+            <label><input type="radio" name="q4" value="D"> D. 120°C</label>
+        </div>
+        <div class="question" id="question5">
+            <p>5: Who wrote "Romeo and Juliet"?</p>
+            <label><input type="radio" name="q5" value="A"> A. Charles Dickens</label><br>
+            <label><input type="radio" name="q5" value="B"> B. Mark Twain</label><br>
+            <label><input type="radio" name="q5" value="C"> C. William Shakespeare</label><br>
+            <label><input type="radio" name="q5" value="D"> D. Jane Austen</label>
+        </div>
+            <div class="question" id="question6">
+                <p>6: Where was India’s first national Museum opened?</p>
+                <label><input type="radio" name="q6" value="A"> A. Delhi</label><br>
+                <label><input type="radio" name="q6" value="B"> B. Hyderabad</label><br>
+                <label><input type="radio" name="q6" value="C"> C. Rajasthan</label><br>
+                <label><input type="radio" name="q6" value="D"> D. Mumbai</label>
+            </div>
+            <div class="question" id="question7">
+                <p>7: What is the pH value of the human body?</p>
+                <label><input type="radio" name="q7" value="A"> A. 9.2 to 9.8</label><br>
+                <label><input type="radio" name="q7" value="B"> B. 7.0 to 7.8</label><br>
+                <label><input type="radio" name="q7" value="C"> C. 6.1 to 6.3</label><br>
+                <label><input type="radio" name="q7" value="D"> D. 5.4 to 5.6</label>
+            </div>
+            <div class="question" id="question8">
+                <p>8: The father of Indian missile technology is _________________?</p>
+                <label><input type="radio" name="q8" value="A"> A. Dr Homi Bhabha</label><br>
+                <label><input type="radio" name="q8" value="B"> B. Dr Chidambaram</label><br>
+                <label><input type="radio" name="q8" value="C"> C. Dr U.R. Rao</label><br>
+                <label><input type="radio" name="q8" value="D"> D. Dr A.P.J. Abdul Kalam</label>
+            </div>
+            <div class="question" id="question9">
+                <p>9: What is the name of the first Indian woman who wins the Man Booker Prize?</p>
+                <label><input type="radio" name="q9" value="A"> A. Salman Rushdie</label><br>
+                <label><input type="radio" name="q9" value="B"> B. Arundhati Roy</label><br>
+                <label><input type="radio" name="q9" value="C"> C. V.S. Naipaul</label><br>
+                <label><input type="radio" name="q9" value="D"> D. Kiran Desai</label>
+            </div>
+            <div class="question" id="question10">
+                <p>10: The green planet in the solar system is?</p>
+                <label><input type="radio" name="q10" value="A"> A. Mars</label><br>
+                <label><input type="radio" name="q10" value="B"> B. Uranus</label><br>
+                <label><input type="radio" name="q10" value="C"> C. Venus</label><br>
+                <label><input type="radio" name="q10" value="D"> D. Earth</label>
+            </div>
+            
+        <button id="nextButton">Next</button>
+        <button id="viewScoreButton" style="display: none;">View Score</button>
+        <div id="score" style="display: none;"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    let currentQuestion = 1;
+    const totalQuestions = 10;
+
+    const answers = {
+        q1: 'C',
+        q2: 'C',
+        q3: 'B',
+        q4: 'B',
+        q5: 'C',
+        q6: 'D',
+        q7: 'B',
+        q8: 'D',
+        q9: 'B',
+        q10: 'B'
+    };
+
+    const showQuestion = (questionNumber) => {
+        for (let i = 1; i <= totalQuestions; i++) {
+            document.getElementById(`question${i}`).style.display = 'none';
+        }
+        document.getElementById(`question${questionNumber}`).style.display = 'block';
+    };
+
+    document.getElementById('nextButton').addEventListener('click', () => {
+        if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+        if (currentQuestion === totalQuestions) {
+            document.getElementById('nextButton').style.display = 'none';
+            document.getElementById('viewScoreButton').style.display = 'block';
+        }
+    });
+
+    document.getElementById('viewScoreButton').addEventListener('click', () => {
+        let score = 0;
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === answers[`q${i}`]) {
+                score++;
+            }
+        }
+        document.getElementById('score').innerText = `Your score: ${score} out of ${totalQuestions}`;
+        document.getElementById('score').style.display = 'block';
+    });
+
+    showQuestion(currentQuestion);
+});
+
+    </script>
+</body>
+</html>
